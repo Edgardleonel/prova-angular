@@ -1,12 +1,36 @@
 import { TestBed, async } from '@angular/core/testing';
+
 import { AppComponent } from './app.component';
+import { CrudComponent } from './crud/crud.component';
+
+import { MatTableModule } from '@angular/material/table';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
+
+import { CepService } from './services/cep.service';
+import { Service } from './services/service';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        CrudComponent
       ],
+      imports: [
+        AppRoutingModule,
+        BrowserModule,
+        BrowserAnimationsModule,
+        FormsModule,
+        MatTableModule,
+        MatInputModule,
+        HttpClientModule,
+      ],
+      providers: [CepService, Service],
     }).compileComponents();
   }));
 
