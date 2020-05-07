@@ -17,8 +17,8 @@ export class CrudComponent implements OnInit {
 	public loading
 
 	constructor(
-    public cep: CepService,
-    private service: Service
+    	public cep: CepService,
+    	private service: Service
   	) { }
   
   	ngOnInit() {
