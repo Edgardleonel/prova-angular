@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CepService } from '../services/cep.service';
 import { Service } from '../services/service';
-import { Persons } from '../model/persons';
+import { Persons } from '../interface/persons';
 
 @Component({
   selector: 'app-crud',

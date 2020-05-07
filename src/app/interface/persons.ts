@@ -1,9 +1,9 @@
 export class Persons {
     name: string;
-    cpf: string;
-    phone: string;
+    cpf: number;
+    phone: number;
     email: string;
-    cep: string;
+    cep: number;
     state: string;
     city: string;
     street: string;
